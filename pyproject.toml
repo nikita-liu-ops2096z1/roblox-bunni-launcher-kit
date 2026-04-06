@@ -1,0 +1,18 @@
+[project]
+name = "roblox-bunni-launcher-kit"
+version = "1.2.0"
+description = "Roblox-bunni-launcher tool"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
